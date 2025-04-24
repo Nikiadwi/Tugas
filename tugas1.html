@@ -3,46 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Sistem Operasi-1</title>
     <link rel="stylesheet" href="tugas1.css" />
-    <title>Tugas 1</title>
   </head>
   <body>
-    <h1>Tugas 1 - Sistem Operasi</h1>
+    <h1>Galeri Penjadwalan Disk</h1>
 
     <div class="gambar-container">
-      <div class="judul-gambar">1. Scan</div>
-      <img src="Scan.png" alt="Scan" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">1. Scan</h2>
+      <div class="konten-gambar">
+        <img src="Scan.png" alt="Scan" />
+        <p class="deskripsi">
+          Algoritma SCAN bergerak ke satu arah sampai akhir sebelum kembali.
+          Menyapu seperti elevator yang bolak-balik.
+        </p>
+      </div>
     </div>
 
     <div class="gambar-container">
-      <div class="judul-gambar">2. C-Scan</div>
-      <img src="C Scan1.png" alt="C-Scan" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">2. C Scan</h2>
+      <div class="konten-gambar">
+        <img src="C Scan1.png" alt="C Scan" />
+        <p class="deskripsi">
+          C-SCAN bergerak satu arah sampai akhir lalu kembali ke awal tanpa
+          melayani saat kembali. Mengurangi waktu tunggu.
+        </p>
+      </div>
     </div>
 
     <div class="gambar-container">
-      <div class="judul-gambar">3. LOOK</div>
-      <img src="Look.png" alt="LOOK" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">3. LOOK</h2>
+      <div class="konten-gambar">
+        <img src="Look.png" alt="LOOK" />
+        <p class="deskripsi">
+          Algoritma LOOK seperti SCAN tapi berhenti di permintaan terakhir, jadi
+          tidak selalu ke ujung disk.
+        </p>
+      </div>
     </div>
 
     <div class="gambar-container">
-      <div class="judul-gambar">4. C-LOOK</div>
-      <img src="C Look.png" alt="C-LOOK" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">4. C LOOK</h2>
+      <div class="konten-gambar">
+        <img src="C Look.png" alt="C LOOK" />
+        <p class="deskripsi">
+          C-LOOK adalah versi circular dari LOOK. Kepala disk kembali ke
+          permintaan paling awal, bukan ke awal fisik.
+        </p>
+      </div>
     </div>
 
     <div class="gambar-container">
-      <div class="judul-gambar">5. PTPD</div>
-      <img src="PTPD.png" alt="PTPD" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">5. PTPD</h2>
+      <div class="konten-gambar">
+        <img src="PTPD.png" alt="PTPD" />
+        <p class="deskripsi">
+          PTPD (Penjadwalan Terdekat Prioritas Dinamis) adalah pendekatan modern
+          dengan kombinasi jarak dan prioritas.
+        </p>
+      </div>
     </div>
 
     <div class="gambar-container">
-      <div class="judul-gambar">6. SSTF</div>
-      <img src="SSTF1.png" alt="SSTF" />
-      <div class="deskripsi"></div>
+      <h2 class="judul-gambar">6. SSTF</h2>
+      <div class="konten-gambar">
+        <img src="SSTF1.png" alt="SSTF" />
+        <p class="deskripsi">
+          SSTF melayani permintaan terdekat dari posisi kepala disk sekarang.
+          Menurunkan waktu tunggu tapi bisa kelaparan.
+        </p>
+      </div>
     </div>
   </body>
 </html>
