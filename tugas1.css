@@ -80,8 +80,6 @@ h1 {
 @media (max-width: 884px) {
   body {
     padding: 10px;
-    overflow-y: visible;
-    overflow-x: visible;
   }
 
   .konten-gambar {
@@ -91,6 +89,7 @@ h1 {
   .konten-gambar img,
   .konten-gambar .deskripsi {
     width: 100%;
+    height: auto;
   }
 
   .gambar-container {
