@@ -71,6 +71,9 @@ img {
   body {
     padding: 10px;
   }
+  .gambar-container img {
+    max-width: 100%; /* Memastikan gambar ditampilkan dengan benar di ponsel */
+  }
 
   .gambar-container {
     padding: 10px;
