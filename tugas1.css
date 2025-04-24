@@ -22,12 +22,13 @@ h1 {
 
 .gambar-container {
   margin-bottom: 30px;
-  background-color: rgb(248, 240, 230) z;
+  background-color: rgb(248, 240, 230);
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(151, 91, 91, 0.1);
   animation: fadeIn 2s ease-in-out;
-  width: 600px;
+  width: 100%;
+  max-width: 600px; /* Membatasi lebar maksimum pada desktop */
 }
 
 .judul-gambar {
@@ -40,7 +41,7 @@ h1 {
 }
 
 img {
-  max-width: 650px; /* Ukuran gambar tetap */
+  max-width: 100%; /* Ukuran gambar tetap fleksibel */
   border-radius: 20px;
   animation: fadeIn 1.5s ease-in-out;
   width: 100%;
@@ -61,5 +62,39 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media query untuk ponsel */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .gambar-container {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .judul-gambar {
+    font-size: 16px;
+  }
+
+  .deskripsi {
+    font-size: 14px;
+  }
+}
+
+/* Media query untuk tablet */
+@media only screen and (max-width: 768px) {
+  .gambar-container {
+    width: 90%; /* Lebar 90% dari layar pada tablet */
+  }
+}
+
+/* Media query untuk desktop */
+@media only screen and (min-width: 1024px) {
+  .gambar-container {
+    width: 600px; /* Lebar tetap pada desktop */
   }
 }
