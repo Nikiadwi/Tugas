@@ -80,7 +80,8 @@ h1 {
 @media (max-width: 884px) {
   body {
     padding: 10px;
-    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-x: visible;
   }
 
   .konten-gambar {
