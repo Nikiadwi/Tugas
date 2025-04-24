@@ -44,7 +44,6 @@ img {
   max-width: 100%; /* Ukuran gambar tetap fleksibel */
   border-radius: 20px;
   animation: fadeIn 1.5s ease-in-out;
-  width: 100%;
   height: auto;
 }
 
