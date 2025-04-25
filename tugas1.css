@@ -1,20 +1,23 @@
+/* Reset margin dan padding pada html dan body untuk menghindari white space */
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
   width: 100%;
   height: 100%;
+  box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
 }
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  padding: 20px;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
   animation: fadeIn 1.5s ease-in-out;
+  padding: 0 10px; /* Padding kiri dan kanan untuk memberikan ruang */
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -33,7 +36,8 @@ h1 {
   box-shadow: 0 4px 8px rgba(151, 91, 91, 0.1);
   animation: fadeIn 2s ease-in-out;
   width: 100%;
-  max-width: 900px;
+  max-width: 100%; /* Pastikan lebar gambar-container 100% */
+  box-sizing: border-box; /* Untuk memastikan padding dihitung dalam lebar */
 }
 
 .judul-gambar {
@@ -68,6 +72,7 @@ h1 {
   color: #555;
   animation: fadeIn 1.5s ease-in-out 0.5s;
   text-align: justify;
+  margin-top: 10px;
 }
 
 @keyframes fadeIn {
@@ -81,9 +86,10 @@ h1 {
   }
 }
 
+/* Responsif untuk ponsel */
 @media (max-width: 884px) {
   body {
-    padding: 5px;
+    padding: 0 10px; /* Berikan sedikit ruang kiri-kanan */
   }
 
   .konten-gambar {
@@ -92,7 +98,7 @@ h1 {
   }
 
   .konten-gambar img {
-    width: 100vw;
+    width: 100vw; /* Gambar mengambil lebar penuh layar */
     height: auto;
   }
 
@@ -106,7 +112,7 @@ h1 {
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 100%;
+    max-width: 100%; /* Prevent white space on the right */
     box-sizing: border-box;
   }
 
@@ -119,6 +125,7 @@ h1 {
   }
 }
 
+/* Penyesuaian ukuran elemen untuk layar lebih besar */
 @media only screen and (min-width: 1024px) {
   .gambar-container {
     width: 800px;
