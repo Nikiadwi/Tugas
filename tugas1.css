@@ -29,7 +29,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(151, 91, 91, 0.1);
   animation: fadeIn 2s ease-in-out;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .judul-gambar {
@@ -96,6 +96,7 @@ h1 {
   .gambar-container {
     padding: 10px;
     margin-bottom: 20px;
+    max-width: fit-content;
   }
 
   .judul-gambar {
