@@ -89,19 +89,19 @@ h1 {
     flex-direction: column;
   }
 
-  .konten-gambar img,
-  .konten-gambar .deskripsi {
-    width: 60%;
+  .konten-gambar img {
+    width: 100%;
     height: auto;
+  }
+
+  .konten-gambar .deskripsi {
+    width: 100%;
   }
 
   .gambar-container {
     padding: 10px;
     margin-bottom: 20px;
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
-    box-shadow: none;
+    max-width: fit-content;
   }
 
   .judul-gambar {
