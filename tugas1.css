@@ -90,12 +90,16 @@ h1 {
   }
 
   .konten-gambar img {
-    width: 100%;
+    width: 100vw;
     height: auto;
+    max-width: 500px;
+    display: block;
   }
 
   .konten-gambar .deskripsi {
     width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   .gambar-container {
