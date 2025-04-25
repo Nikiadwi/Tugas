@@ -17,8 +17,8 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 40px;
-  color: rgb(109, 67, 0);
-  text-shadow: 0 0 10px rgb(109, 67, 0);
+  color: rgb(30, 19, 0);
+  text-shadow: 0 0 10px rgb(60, 37, 1);
 }
 
 .gambar-container {
@@ -29,7 +29,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(151, 91, 91, 0.1);
   animation: fadeIn 2s ease-in-out;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .judul-gambar {
@@ -63,6 +63,7 @@ h1 {
   font-size: 15px;
   color: #555;
   animation: fadeIn 1.5s ease-in-out 0.5s;
+  text-align: justify;
 }
 
 @keyframes fadeIn {
@@ -88,7 +89,7 @@ h1 {
 
   .konten-gambar img,
   .konten-gambar .deskripsi {
-    width: 100%;
+    width: 60%;
     height: auto;
   }
 
