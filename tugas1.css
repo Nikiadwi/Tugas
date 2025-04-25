@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-
 html {
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 body {
   font-family: "Poppins", Arial, sans-serif;
   padding: 20px;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
-  /* warna soft */
+  /* Soft colors */
   animation: fadeIn 1.5s ease-in-out;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 h1 {
@@ -20,6 +19,7 @@ h1 {
   margin-bottom: 40px;
   color: rgb(30, 19, 0);
   text-shadow: 0 0 10px rgb(60, 37, 1);
+  font-size: 24px; /* Make title larger for mobile */
 }
 
 .gambar-container {
@@ -36,13 +36,12 @@ h1 {
 .judul-gambar {
   font-weight: bold;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 22px; /* Increase font size for headers on mobile */
   color: #333;
   animation: fadeIn 2.5s ease-in-out;
   text-shadow: 0 0 10px rgb(109, 67, 0);
 }
 
-/* Wrapper untuk gambar + deskripsi */
 .konten-gambar {
   display: flex;
   flex-direction: row;
@@ -62,7 +61,7 @@ h1 {
 
 .konten-gambar .deskripsi {
   width: 48%;
-  font-size: 15px;
+  font-size: 16px; /* Increased font size for mobile readability */
   color: #555;
   animation: fadeIn 1.5s ease-in-out 0.5s;
   text-align: justify;
@@ -82,42 +81,41 @@ h1 {
 /* Responsif untuk ponsel */
 @media (max-width: 884px) {
   body {
-    padding: 10px;
+    padding: 5px;
   }
 
   .konten-gambar {
     flex-direction: column;
+    width: 100%;
   }
 
   .konten-gambar img {
-    width: 100vw;
+    width: 100vw; /* Full width for images */
     height: auto;
-    max-width: 500px;
-    display: block;
   }
 
   .konten-gambar .deskripsi {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px; /* Bigger font size for better readability */
     margin-top: 10px;
   }
 
   .gambar-container {
     padding: 10px;
     margin-bottom: 20px;
-    max-width: fit-content;
+    width: 100%;
+    max-width: 100%; /* Prevent white space on the right */
   }
 
   .judul-gambar {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .deskripsi {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-/* Desktop */
 @media only screen and (min-width: 1024px) {
   .gambar-container {
     width: 800px;
