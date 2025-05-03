@@ -43,3 +43,13 @@ img {
   color: #777;
   margin-top: 10px;
 }
+.gambar-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.gambar-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
